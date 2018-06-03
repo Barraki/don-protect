@@ -42,6 +42,8 @@ $(function () {
 			if ($(this).scrollTop() > 1) {
 				$('.nav').addClass("nav-fixed");
 				$('.logo').removeClass("col-2");
+				$('.soc-nav').removeClass("offset-2");
+				$('.nav-block').addClass("offset-1");
 				$('.logo').addClass("col-3");
 				$('.img_logo').addClass("logo-fixed");
 				$('.logo_text').css('display', 'block');
@@ -51,6 +53,8 @@ $(function () {
 				$('.logo').removeClass("logo-fixed");
 				$('.logo').removeClass("col-3");
 				$('.logo').addClass("col-2");
+				$('.soc-nav').addClass("offset-2");
+				$('.nav-block').removeClass("offset-1");
 				$('.logo_text').css('display', 'none');
 			}
 		});
