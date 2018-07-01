@@ -10,7 +10,7 @@
 	<meta name="description" content="Наша цель - донести самую и актуальную правовую информацию по текущей деятельности правозащитных, гуманитарных и других организаций на территории Донецкой области.">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<!-- Template Basic Images Start -->
 	<meta property="og:image" content="path/to/image.jpg">
@@ -23,7 +23,8 @@
 	<!-- Custom Browsers Color End -->
 
 	<link rel="stylesheet" href="css/main.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	  crossorigin="anonymous">
 
 </head>
 
@@ -32,15 +33,15 @@
 	<header>
 		<div class="container-fluid nav">
 			<div class="container">
-				<div class="row">
-					<div class="col-2 logo">
+				<div class="row justify-content-between">
+					<div class="col-8 col-xl-2 col-lg-2 col-md-5 col-sm-7 logo">
 						<a href="#">
 							<img class="img_logo img-responsive" src="img/logo.svg" alt="Правовой Донбасс">
 							<div class="logo_text ">ПРАВОВОЙ ДОНБАСС</div>
 						</a>
 					</div>
-					<div class="col-5 nav-block">
-						<nav>
+					<div class="col-5 col-xl-6 col-lg-6 col-md-5 nav-block">
+						<nav class="desktop">
 							<ul class="nav-bar">
 								<li>
 									<a href="#">ГЛАВНАЯ</a>
@@ -54,35 +55,41 @@
 								<li>
 									<a href="#">НОВОСТИ</a>
 								</li>
+								<li>
+									<a href="#">ГАЗЕТЫ</a>
+								</li>
 							</ul>
 						</nav>
 					</div>
-					<div class="col-3 offset-2 soc-nav">
+					<div class="col-4 col-xl-2 col-lg-4 col-md-2 soc-nav">
 						<ul>
-							<li>
+							<li class="soc-nav_icon">
 								<a href="#">
 									<i class="fab fa-instagram"></i>
 								</a>
 							</li>
-							<li>
+							<li class="soc-nav_icon">
 								<a href="#">
 									<i class="fab fa-telegram-plane"></i>
 								</a>
 							</li>
-							<li>
+							<li class="soc-nav_icon">
 								<a href="#">
 									<i class="fab fa-twitter"></i>
 								</a>
 							</li>
-							<li>
+							<li class="soc-nav_icon">
 								<a href="#">
 									<i class="fab fa-facebook-f"></i>
 								</a>
 							</li>
-							<li>
+							<li class="search_button">
 								<a href="#">
 									<i class="fas fa-search"></i>
 								</a>
+							</li>
+							<li class="hamburger">
+								<i class="fas fa-bars"></i>
 							</li>
 						</ul>
 					</div>
@@ -91,95 +98,146 @@
 		</div>
 	</header>
 	<!-- NAV-BAR END -->
+	<div class="fixed_window">
+		<nav class="desktop">
+			<ul class="nav-bar">
+				<li>
+					<a href="#">ГЛАВНАЯ</a>
+				</li>
+				<li>
+					<a href="#">ПРО НАС</a>
+				</li>
+				<li>
+					<a href="#">СТАТЬИ</a>
+				</li>
+				<li>
+					<a href="#">НОВОСТИ</a>
+				</li>
+				<li>
+					<a href="#">ГАЗЕТЫ</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="socials">
+			<a href="#">
+				<i class="fab fa-instagram"></i>
+			</a>
+			<a href="#">
+				<i class="fab fa-telegram-plane"></i>
+			</a>
+			<a href="#">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+			<a href="#">
+				<i class="fab fa-twitter"></i>
+			</a>
+		</div>
+	</div>
+	<script>
+		(function() {
+			var cx = '007109332506584461410:v42lq4cuani';
+			var gcse = document.createElement('script');
+			gcse.type = 'text/javascript';
+			gcse.async = false;
+			gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(gcse, s);
+		})();
+	</script>
+	<gcse:search></gcse:search>
 	<main>
 		<div class="container">
-			<div class="row body">
-				<div class="col-8 description_block">
-					<h1>ПРАВОВОЙ ДОНБАСС</h1>
-					<p>Наша цель - донести самую и актуальную правовую информацию по текущей деятельности правозащитных, гуманитарных и других
-						организаций на территории Донецкой области.</p>
-				</div>
-				<div class="col-4 img-block">
-				</div>
-			</div>
-			<div class="slider-container">
-				<div class="row">
-					<div class="col-8 slider-img">
-						<div class="nav-slider">
-							<button class="prevV">
-								<i class="fas fa-chevron-left"></i>
-							</button>
-							<button class="nextT">
-								<i class="fas fa-chevron-right"></i>
-							</button>
-						</div>
-						<div class="slider-wrap">
-							<img src="img/slider-1.png" alt="">
-							<img src="img/blind-justice.png" alt="">
-							<img src="img/5afe87705d395.jpg" alt="">
-						</div>
+			<section>
+				<div class="row body">
+					<div class="col-12 col-xl-8 col-lg-8 col-md-12 col-sm-12 description_block">
+						<h1>ПРАВОВОЙ ДОНБАСС</h1>
+						<p>Наша цель - донести самую актуальную правовую информацию по текущей деятельности правозащитных, гуманитарных и других
+							организаций на территории Донецкой области.</p>
 					</div>
-					<div class="col-4 slider-info">
-						<span>ГЛАВНЫЕ НОВОСТИ</span>
-						<div class="change_block">
-							<div>
-								<h3>«Право на захист» виграв зразкову справу у Верховному Суді щодо поновлення виплати пенсії пенсіонеру-переселенцю</h3>
-								<p>Встановлення юридичного факту народження або смерті на тимчасово непідконтрольній території України...</p>
-								<a class="btn btn_blue" href="#">Подробнее</a>
-							</div>
-							<div>
-								<h3>Выпуск бюллетеня «Права людини на південному сході України»</h3>
-								<p>Верховний Суд завершив розгляд зразкової справи щодо оскарження припинення виплати пенсії і її поновлення пенсіонеру-ВПО...</p>
-								<a class="btn btn_blue" href="#">Подробнее</a>
-							</div>
-							<div>
-								<h3>Переселенці зможуть оформити субсидію без договору оренди житла</h3>
-								<p>З 1 травня 2018 року діє нова програма житлових субсидій, яка є перш за все соціально справедливою та більш адресною.
-									Зміни направлені на те, щоб всі ті...</p>
-								<a class="btn btn_blue" href="#">Подробнее</a>
-							</div>
-						</div>
+					<div class="col-12 col-xl-4 col-lg-4 img-block">
 					</div>
 				</div>
-			</div>
+				<div class="slider-container">
+					<div class="row">
+						<div class="col-12 col-xl-8 col-lg-8 col-md-12 col-sm-12 slider-img">
+							<div class="nav-slider">
+								<button class="prevV">
+									<i class="fas fa-chevron-left"></i>
+								</button>
+								<button class="nextT">
+									<i class="fas fa-chevron-right"></i>
+								</button>
+							</div>
+							<div class="slider-wrap">
+								<img src="img/slider-1.png" alt="">
+								<img src="img/blind-justice.png" alt="">
+								<img src="img/5afe87705d395.jpg" alt="">
+							</div>
+						</div>
+						<div class="col-12 col-xl-4 col-lg-4 col-md-12 col-sm-12 slider-info">
+							<span>ГЛАВНЫЕ НОВОСТИ</span>
+							<div class="change_block">
+								<div>
+									<h3>«Право на захист» виграв зразкову справу у Верховному Суді щодо поновлення виплати пенсії пенсіонеру-переселенцю</h3>
+									<p>Встановлення юридичного факту народження або смерті на тимчасово непідконтрольній території України...</p>
+									<a class="btn btn_blue" href="#">Подробнее</a>
+								</div>
+								<div>
+									<h3>Выпуск бюллетеня «Права людини на південному сході України»</h3>
+									<p>Верховний Суд завершив розгляд зразкової справи щодо оскарження припинення виплати пенсії і її поновлення пенсіонеру-ВПО...</p>
+									<a class="btn btn_blue" href="#">Подробнее</a>
+								</div>
+								<div>
+									<h3>Переселенці зможуть оформити субсидію без договору оренди житла</h3>
+									<p>З 1 травня 2018 року діє нова програма житлових субсидій, яка є перш за все соціально справедливою та більш адресною.
+										Зміни направлені на те, щоб всі ті...</p>
+									<a class="btn btn_blue" href="#">Подробнее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<!-- Наши партнеры begin -->
 			<section id="our-partners">
 				<div class="row justify-content-between">
-					<div class="col-5 offer">
-						<div class="col-10 no-padding">
+					<div class="col-12 col-xl-5 col-lg-5 col-md-12 col-sm-12 offer">
+						<div class="col-12 col-xl-10 col-lg-10 col-md-10 col-sm-10 no-padding">
 							<h2>Наши партнеры</h2>
 							<figure class="box_block">
 								<img src="img/offer.png" alt="">
 							</figure>
 						</div>
 					</div>
-					<div class="col-7 partners_block no-padding">
+					<div class="col-12 col-xl-7 col-lg-7 col-md-12 col-sm-12 partners_block no-padding">
 						<div class="row">
-							<div class="col-4">
-								<figure class="box_block" style="background-image: url(img/undp.png);">
+							<div class="col-6 col-xl-4 col-lg-4 col-md-4 col-sm-4">
+								<figure class="box_block">
+									<img src="img/undp.png" alt="">
 								</figure>
 							</div>
-							<div class="col-4 ">
+							<div class="col-6 col-xl-4 col-lg-4 col-md-4 col-sm-4">
 								<figure class="box_block">
 									<img src="img/partner-2.png" alt="">
 								</figure>
 							</div>
-							<div class="col-4">
+							<div class="col-6 col-xl-4 col-lg-4 col-md-4 col-sm-4">
 								<figure class="box_block">
 									<img src="img/partner-3.png" alt="">
 								</figure>
 							</div>
-							<div class="col-4">
+							<div class="col-6 col-xl-4 col-lg-4 col-md-4 col-sm-4">
 								<figure class="box_block">
-									<img src="img/partner-4.png" alt="">
+									<img src="img/рада-адвокатів.png" alt="">
 								</figure>
 							</div>
-							<div class="col-4 ">
+							<div class="col-6 col-xl-4 col-lg-4 col-md-4 col-sm-4">
 								<figure class="box_block">
 									<img src="img/partner-5.png" alt="">
 								</figure>
 							</div>
-							<div class="col-4">
+							<div class="col-6 col-xl-4 col-lg-4 col-md-4 col-sm-4">
 								<figure class="box_block">
 									<img src="img/partner-6.png" alt="">
 								</figure>
@@ -192,9 +250,9 @@
 			<section id="articles">
 				<h2 class="title-section">СТАТЬИ</h2>
 				<div class="row justify-content-between">
-					<div class="col-8 no-padding">
+					<div class="col-12 col-xl-8 col-lg-8 col-md-12 col-sm-12 no-padding articles_section">
 						<div class="row">
-							<div class="col-6">
+							<div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12">
 								<article>
 									<a href="#">
 										<div class="tittle_box">
@@ -213,7 +271,7 @@
 									</a>
 								</article>
 							</div>
-							<div class="col-6">
+							<div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12">
 								<article>
 									<a href="#">
 										<div class="tittle_box">
@@ -232,7 +290,7 @@
 									</a>
 								</article>
 							</div>
-							<div class="col-6">
+							<div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12">
 								<article>
 									<a href="#">
 										<div class="tittle_box">
@@ -251,7 +309,7 @@
 									</a>
 								</article>
 							</div>
-							<div class="col-6">
+							<div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12">
 								<article>
 									<a href="#">
 										<div class="tittle_box">
@@ -272,7 +330,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-4 useful_info">
+					<div class="col-12 col-xl-4 col-lg-4 col-md-12 col-sm-12 useful_info">
 						<div class="tittle">Полезнная информация</div>
 						<ul>
 							<li>
@@ -298,11 +356,11 @@
 			<section id="news">
 				<h2>НОВОСТИ</h2>
 				<div class="row">
-					<div class="col-8 distance">
+					<div class="col-12 col-xl-8 col-lg-8 col-md-12 col-sm-12 distance">
 						<div class="first_block">
 							<a href="#">
-								<div class="img_block">
-									<img src="img/news-1.png" alt="">
+								<div class="img_block" style="background-image: url(img/slider-1.png)">
+
 									<div class="inform">
 										<div class="category">пункты выезда</div>
 										<div class="time">
@@ -311,13 +369,32 @@
 									</div>
 								</div>
 								<div class="preview_article">
-									<h3>БФ "Право на захист" виграв зразкову справу у Верховному Cудi щодо поновлення виплати пенсiї пенсіонеру-переселенцю</h3>
+									<h3>БФ виграв зразкову справу щодо поновлення виплати пенсiї пенсіонеру-переселенцю</h3>
 								</div>
 								<a href="#" class="btn btn_blue">Подробнее</a>
 							</a>
 						</div>
 					</div>
-					<div class="col-4 distance">
+					<div class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-12 distance">
+						<div class="second_block">
+							<a href="#">
+								<div class="img_block">
+									<img src="img/news-2.png" alt="">
+									<div class="inform">
+										<div class="category">без рубрика</div>
+										<div class="time">
+											<i class="far fa-clock"></i> 18 мая 2018 20:30
+										</div>
+									</div>
+								</div>
+								<div class="preview_article">
+									<h3>Выпуск бюллетеня «Права людини на південному сході України»</h3>
+								</div>
+								<a href="#" class="btn btn_blue">Подробнее</a>
+							</a>
+						</div>
+					</div>
+					<div class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-12 distance">
 						<div class="second_block">
 							<a href="#">
 								<div class="img_block">
@@ -336,7 +413,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-4 distance">
+					<div class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-12 distance">
 						<div class="second_block">
 							<a href="#">
 								<div class="img_block">
@@ -355,26 +432,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-4 distance">
-						<div class="second_block">
-							<a href="#">
-								<div class="img_block">
-									<img src="img/news-2.png" alt="">
-									<div class="inform">
-										<div class="category">пункты выезда</div>
-										<div class="time">
-											<i class="far fa-clock"></i> 18 мая 2018 20:30
-										</div>
-									</div>
-								</div>
-								<div class="preview_article">
-									<h3>Выпуск бюллетеня «Права людини на південному сході України»</h3>
-								</div>
-								<a href="#" class="btn btn_blue">Подробнее</a>
-							</a>
-						</div>
-					</div>
-					<div class="col-4 distance">
+					<div class="col-12 col-xl-4 col-lg-4 col-md-6 col-sm-12 distance">
 						<div class="second_block">
 							<a href="#">
 								<div class="img_block">
@@ -393,11 +451,11 @@
 						</div>
 					</div>
 				</div>
-				<a class="btn btn_white" href="#">Все новости</a>
+				<a class="btn btn_white" href="news.html">Все новости</a>
 			</section>
 			<section id="links">
 				<h2>ПОЛЕЗНЫЕ ССЫЛКИ</h2>
-				<div id="slider1">
+				<!-- <div id="slider1">
 					<div class="viewport">
 						<ul class="overview">
 							<li>Судова влада України</li>
@@ -418,6 +476,21 @@
 							<i class="fas fa-arrow-down"></i>
 						</a>
 					</div>
+				</div> -->
+				<div class="row">
+					<div class="col-6">
+					<a href="#">Тимчасовий порядок контролю за переміщенням осіб через лінію зіткнення у межах Донецької та Луганської областей</a>
+				</div>
+				<div class="col-6">
+					<a href="#">Судова влада України</a>
+				</div>
+				<div class="col-6">
+					<a href="#">Єдиний державний реєстр судових рішень Координаційний центр з надання правової допомоги Электронные правовые консультации
+						Харківської Правозахисної Групи</a>
+					</div>
+					<div class="col-6">
+					<a href="#"></a>
+					</div>
 				</div>
 		</div>
 		</section>
@@ -427,11 +500,11 @@
 		<div class="container-fluid">
 			<div class="container">
 				<div class="row">
-					<div class="col-3 logo_column">
+					<div class="col-12 order-12 col-xl-3 col-lg-3 col-md-4 col-sm-6 logo_column">
 						<img class="logo_copy img-responsive" src="img/logo.svg" alt="Правовой Донбасс">
 						<div class="right_copy">© Правовой Донбасс 2018</div>
 					</div>
-					<div class="col-2 nav-block__footer">
+					<div class="col-2 col-xl-2 hidden-md nav-block__footer">
 						<nav>
 							<ul class="nav-bar">
 								<li>
@@ -449,39 +522,43 @@
 							</ul>
 						</nav>
 					</div>
-					<div class="col-4 subscribe_block">
+					<div class="col-4 col-xl-4 col-lg-5 subscribe_block">
 						<label for="subscribe">Подпишитесь на нашу рассылку</label>
 						<input type="email" name="subscribe" placeholder="Email">
 						<button>Подписаться</button>
 					</div>
-					<div class="col-3 contacts">
+					<div class="col-12 col-xl-3 col-lg-4 col-md-5 col-sm-6 contacts">
 						<ul>
-							<li>Мариуполь ул. Ленина 48</li>
-							<li><a href="tel:+380995681221">+380 99 568 12 21</a></li>
-							<li><a href="mailto:go.donbaspravo@gmail.com">go.donbaspravo@gmail.com</a></li>
+							<li>Мариуполь, ул.Куинджи 90\43</li>
+							<li>
+								<a href="tel:+380676976433">+38067 697 64 33</a>
+							</li>
+							<li>
+								<a href="mailto:go.donbaspravo@gmail.com">go.donbaspravo@gmail.com</a>
+							</li>
 						</ul>
 						<ul class="soc-nav_footer">
-								<li>
-									<a href="#">
-										<i class="fab fa-instagram"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fab fa-telegram-plane"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fab fa-twitter"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fab fa-facebook-f"></i>
-									</a>
-								</li>
-							</ul>
+							<li>
+								<a href="#">
+									<i class="fab fa-instagram"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-telegram-plane"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
